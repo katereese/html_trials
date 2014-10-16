@@ -4,43 +4,72 @@
 <body>
 
     <style>
-    #form {
+
+    form {
 /*        background-color: red;
-*/        display: block;
-        font-family: sans-serif;
+*/       font-family: sans-serif;
         font-weight: bold;
 
     }
 
     #form label {
 /*        background-color: blue;
-*/         display: block;
+*/        
 
     }
 
      #form input {
-/*        background-color: blue;
-*/       display: block;
+        /*background-color: blue;*/
 
     }
+
+
+    #radio {
+        /*background-color: blue;*/
+
+
+    }
+
+
+
+
     </style>
 
 
-
-
-
-
-
-
-
-    <div id="form">
+    <form>
       
-        <label for="my-name-tag">Name</label>
+       <div id="name">
+        <label for="my-name-tag">Name:</label>
         <input type="text" name="my-name-tag"></input>
 
-        <label for="my-age-tag">Age</label>
-        <input type="text" name="my-age-tag"></input>
-        <input type="submit" name="submit-tag"></input>
+        <div id="age">
+        <label for="my-age-tag">Age:</label>
+        <input type="text" name="my-age-tag">
+    </div>
+        
+        <div id="favorite">
+        <label for="my-age-tag">Favorite Color:</label> 
+
+       <select>
+          <option value="red">red</option>
+          <option value="green">Green</option>
+          <option value="blue">blue</option>
+        </select>
+        </div>
+
+
+        <div id="radio">
+        <input type="radio" name="Music" value="male">Love Music
+        <input type="radio" name="Music" value="male">Hate Music
+        </div>
+
+         <div id="raining">
+            Is it raining? <input type="checkbox" name="raining" value="raining">
+        </div>
+
+
+        <input type="submit" name="submit-tag">
+
 
     </form>
 
